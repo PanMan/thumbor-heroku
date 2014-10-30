@@ -35,6 +35,8 @@ The `unsafe` mode is forbidden, and you need to set a security key. You can do t
 
 Deployment
 ----------
+To Deploy to Heroku, set the buildpack to jetpack:
+    heroku config:set BUILDPACK_URL=https://github.com/ActivKonnect/jetpack.git
 
 This project comes along with the [jetpack](https://github.com/ActivKonnect/jetpack) buildpack. The `jetpack.sh`
 configuration file is quite straightforward.
