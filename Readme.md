@@ -39,6 +39,10 @@ Deployment
 This project comes along with the [jetpack](https://github.com/ActivKonnect/jetpack) buildpack. The `jetpack.sh`
 configuration file is quite straightforward.
 
+To Deploy to Heroku, set the buildpack first:
+    heroku config:set BUILDPACK_URL=https://github.com/ActivKonnect/jetpack.git
+
+
 It uses a pre-pack which embeds Python and OpenCV, which are the two dependencies required for Thumbor to run correctly.
 
 
